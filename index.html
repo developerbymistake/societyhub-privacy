@@ -270,16 +270,10 @@
           <td>SOS emergency — helps security reach your exact location. You are asked for permission at the time; you can deny and the SOS still sends without location.</td>
         </tr>
         <tr>
-          <td><strong>Payment Transactions</strong></td>
-          <td>Amount, date, payment status, Razorpay order/payment ID</td>
-          <td><span class="tag tag-yes">Required</span> (if payments enabled)</td>
-          <td>Maintenance fee records. We never store card or bank account details.</td>
-        </tr>
-        <tr>
           <td><strong>Device Token (FCM)</strong></td>
           <td>Firebase Cloud Messaging push token</td>
           <td><span class="tag tag-yes">Required</span></td>
-          <td>Deliver push notifications (notices, SOS alerts, payment confirmations)</td>
+          <td>Deliver push notifications (notices, SOS alerts)</td>
         </tr>
         <tr>
           <td><strong>App Activity</strong></td>
@@ -494,11 +488,6 @@
           <td>Delivering push notifications; governed by <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a></td>
         </tr>
         <tr>
-          <td><strong>Razorpay</strong></td>
-          <td>Payment amount, order ID</td>
-          <td>Processing maintenance payments; governed by <a href="https://razorpay.com/privacy/" target="_blank" rel="noopener">Razorpay's Privacy Policy</a>. We never share card or bank details with Razorpay — those are handled entirely within Razorpay's own PCI-DSS certified environment.</td>
-        </tr>
-        <tr>
           <td><strong>Cloud Hosting Provider</strong></td>
           <td>All app data (encrypted in transit)</td>
           <td>Server infrastructure to run the platform</td>
@@ -560,7 +549,7 @@
         </tr>
         <tr>
           <td><strong>Financial info</strong> — Purchase history / transactions</td>
-          <td><span class="tag tag-yes">Collected</span> · Required · App functionality (payment records)</td>
+          <td><span class="tag tag-no">Not collected</span></td>
         </tr>
         <tr>
           <td><strong>Device or other IDs</strong> — Device / advertising ID</td>
@@ -587,7 +576,6 @@
           <td>
             <span class="tag tag-third">Fast2SMS</span> — phone number for OTP delivery only<br>
             <span class="tag tag-third">Firebase</span> — FCM token for push notifications<br>
-            <span class="tag tag-third">Razorpay</span> — payment amount &amp; order ID<br>
             Location data is <strong>not</strong> shared with any third party.
           </td>
         </tr>
