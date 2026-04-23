@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – SocietyHub</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f8fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    header .logo-icon {
+      width: 52px; height: 52px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px;
+    }
+    header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+    header .subtitle { font-size: 15px; opacity: 0.8; margin-top: 6px; }
+    header .updated {
+      display: inline-block;
+      margin-top: 14px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    .toc {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      border-left: 4px solid #3f51b5;
+    }
+    .toc h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #3f51b5; margin-bottom: 14px; }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin-bottom: 6px; }
+    .toc a { color: #3f51b5; text-decoration: none; font-size: 15px; }
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #1a237e;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e8eaf6;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .sec-num {
+      background: #3f51b5;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 13px;
+      padding: 2px 9px;
+      font-weight: 600;
+    }
+
+    h3 { font-size: 16px; font-weight: 600; color: #283593; margin: 20px 0 8px; }
+
+    p { margin-bottom: 12px; color: #333; }
+
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 7px; color: #333; }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+    .data-table th {
+      background: #e8eaf6;
+      color: #1a237e;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+    }
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: top;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: #fafbff; }
+
+    .tag {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 2px 9px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .tag-yes  { background: #e8f5e9; color: #2e7d32; }
+    .tag-no   { background: #fce4ec; color: #c62828; }
+    .tag-opt  { background: #fff3e0; color: #e65100; }
+    .tag-third { background: #f3e5f5; color: #6a1b9a; }
+
+    .highlight {
+      background: #fff9e6;
+      border-left: 4px solid #ffc107;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+    .highlight strong { color: #e65100; }
+
+    .info-box {
+      background: #e8f4fd;
+      border-left: 4px solid #2196f3;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+
+    .permission-row {
+      display: flex;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      align-items: flex-start;
+    }
+    .permission-row:last-child { border-bottom: none; }
+    .perm-icon { font-size: 20px; flex-shrink: 0; width: 28px; text-align: center; }
+    .perm-text strong { display: block; font-size: 15px; margin-bottom: 2px; }
+    .perm-text span { font-size: 14px; color: #555; }
+
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 13px;
+      color: #888;
+    }
+    footer a { color: #3f51b5; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      section { padding: 20px 18px; }
+      header { padding: 36px 18px 32px; }
+      h2 { font-size: 17px; }
+      .data-table { font-size: 13px; }
+      .data-table th, .data-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🏘️</div>
+    <h1>SocietyHub</h1>
+  </div>
+  <p class="subtitle">Privacy Policy — Resident App</p>
+  <span class="updated">Last updated: April 24, 2026</span>
+</header>
+
+<main>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">Who We Are</a></li>
+      <li><a href="#s2">Data We Collect</a></li>
+      <li><a href="#s3">Location Data — Important Details</a></li>
+      <li><a href="#s4">App Permissions</a></li>
+      <li><a href="#s5">How We Use Your Data</a></li>
+      <li><a href="#s6">Data Sharing &amp; Third Parties</a></li>
+      <li><a href="#s7">Data Safety Summary (Play Store)</a></li>
+      <li><a href="#s8">Data Security &amp; Storage</a></li>
+      <li><a href="#s9">Data Retention &amp; Deletion</a></li>
+      <li><a href="#s10">Your Rights</a></li>
+      <li><a href="#s11">Children's Privacy</a></li>
+      <li><a href="#s12">Changes to This Policy</a></li>
+      <li><a href="#s13">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <section id="s1">
+    <h2><span class="sec-num">1</span> Who We Are</h2>
+    <p>
+      SocietyHub ("we", "us", "our") is a community management platform that connects
+      residents with their society's administration, security team, and service providers.
+    </p>
+    <p>
+      This Privacy Policy applies to the <strong>SocietyHub</strong> mobile application
+      available on the Google Play Store. By using the app you agree to the practices
+      described in this policy.
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2">
+    <h2><span class="sec-num">2</span> Data We Collect</h2>
+    <p>We only collect data that is necessary to provide the features of the app.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>What exactly</th>
+          <th>Required?</th>
+          <th>Why we collect it</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Phone Number</strong></td>
+          <td>Mobile number you register with</td>
+          <td><span class="tag tag-yes">Required</span></td>
+          <td>OTP-based account verification and login</td>
+        </tr>
+        <tr>
+          <td><strong>Full Name</strong></td>
+          <td>Name you enter in your profile</td>
+          <td><span class="tag tag-yes">Required</span></td>
+          <td>To identify you within your community</td>
+        </tr>
+        <tr>
+          <td><strong>Flat / Unit Details</strong></td>
+          <td>Flat number, block, resident type</td>
+          <td><span class="tag tag-yes">Required</span></td>
+          <td>To link you to the correct community and unit</td>
+        </tr>
+        <tr>
+          <td><strong>Precise Location (GPS)</strong></td>
+          <td>Latitude &amp; longitude at the moment of an SOS alert</td>
+          <td><span class="tag tag-opt">Optional</span></td>
+          <td>SOS emergency — helps security reach your exact location. You are asked for permission at the time; you can deny and the SOS still sends without location.</td>
+        </tr>
+        <tr>
+          <td><strong>Payment Transactions</strong></td>
+          <td>Amount, date, payment status, Razorpay order/payment ID</td>
+          <td><span class="tag tag-yes">Required</span> (if payments enabled)</td>
+          <td>Maintenance fee records. We never store card or bank account details.</td>
+        </tr>
+        <tr>
+          <td><strong>Device Token (FCM)</strong></td>
+          <td>Firebase Cloud Messaging push token</td>
+          <td><span class="tag tag-yes">Required</span></td>
+          <td>Deliver push notifications (notices, SOS alerts, payment confirmations)</td>
+        </tr>
+        <tr>
+          <td><strong>App Activity</strong></td>
+          <td>SOS history, service requests, feedback ratings you submit</td>
+          <td><span class="tag tag-yes">Required</span></td>
+          <td>Core app functionality — your community history</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <strong>We do NOT collect:</strong> email address, contacts, call logs, SMS,
+      photos or camera, microphone audio, browsing history, installed app list, health or
+      fitness data, or biometric data of any kind.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3">
+    <h2><span class="sec-num">3</span> Location Data — Important Details</h2>
+
+    <div class="highlight">
+      <strong>Location is only accessed when you actively press the SOS button.</strong>
+      The app never collects your location silently, in the background, or at any other time.
+    </div>
+
+    <h3>What happens step by step</h3>
+    <ol>
+      <li>You tap the SOS button and confirm the emergency.</li>
+      <li>The app requests location permission at that moment (if not already granted).</li>
+      <li>If you allow, the app reads your GPS coordinates once and sends them to our server as part of the emergency alert.</li>
+      <li>Your location is displayed to your society's admin and security team so they can reach you quickly.</li>
+      <li>If you deny the permission, the SOS alert still sends — it just won't include a location.</li>
+    </ol>
+
+    <h3>What we do NOT do with location</h3>
+    <ul>
+      <li>We do not track your location continuously or in the background.</li>
+      <li>We do not share your location with advertisers, marketing services, or any third party for commercial purposes.</li>
+      <li>We do not sell location data.</li>
+      <li>We do not use location data for analytics or profiling.</li>
+    </ul>
+
+    <h3>Storage</h3>
+    <p>
+      Your location at the time of an SOS is stored as part of the emergency record on
+      our servers. It is visible only to your community's admin and security team. It is
+      retained as part of your emergency history and is deleted when you request account deletion.
+    </p>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4">
+    <h2><span class="sec-num">4</span> App Permissions</h2>
+    <p>Below are all permissions the app requests and why each one is needed:</p>
+
+    <div class="permission-row">
+      <div class="perm-icon">🌐</div>
+      <div class="perm-text">
+        <strong>INTERNET</strong>
+        <span>Required to communicate with our servers (login, loading data, push notifications).</span>
+      </div>
+    </div>
+    <div class="permission-row">
+      <div class="perm-icon">📍</div>
+      <div class="perm-text">
+        <strong>ACCESS_FINE_LOCATION &amp; ACCESS_COARSE_LOCATION</strong>
+        <span>Used <em>only</em> when you press the SOS button to capture your GPS coordinates for emergency response. Never used in the background.</span>
+      </div>
+    </div>
+    <div class="permission-row">
+      <div class="perm-icon">🔔</div>
+      <div class="perm-text">
+        <strong>POST_NOTIFICATIONS</strong>
+        <span>To deliver push notifications for community notices, payment receipts, and SOS status updates.</span>
+      </div>
+    </div>
+    <div class="permission-row">
+      <div class="perm-icon">📞</div>
+      <div class="perm-text">
+        <strong>CALL_PHONE</strong>
+        <span>Lets you call a service provider (e.g. plumber, electrician) directly from their listing in the app. You initiate every call — the app never dials automatically.</span>
+      </div>
+    </div>
+    <div class="permission-row">
+      <div class="perm-icon">🔊</div>
+      <div class="perm-text">
+        <strong>FOREGROUND_SERVICE &amp; FOREGROUND_SERVICE_MEDIA_PLAYBACK</strong>
+        <span>Used to play the SOS alarm sound even if the device is locked or the app is backgrounded, so the alert audio is heard. A visible notification is shown while this service runs.</span>
+      </div>
+    </div>
+    <div class="permission-row">
+      <div class="perm-icon">📳</div>
+      <div class="perm-text">
+        <strong>VIBRATE</strong>
+        <span>Vibrates the device during an SOS alarm to make the alert more noticeable.</span>
+      </div>
+    </div>
+    <div class="permission-row">
+      <div class="perm-icon">📱</div>
+      <div class="perm-text">
+        <strong>USE_FULL_SCREEN_INTENT</strong>
+        <span>Shows the SOS alert as a full-screen notification when the device is locked — ensures emergency alerts are impossible to miss.</span>
+      </div>
+    </div>
+    <div class="permission-row">
+      <div class="perm-icon">🔁</div>
+      <div class="perm-text">
+        <strong>RECEIVE_BOOT_COMPLETED</strong>
+        <span>Ensures the push notification service restarts correctly after the device reboots, so you don't miss emergency or community notifications.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5">
+    <h2><span class="sec-num">5</span> How We Use Your Data</h2>
+    <ul>
+      <li><strong>Account &amp; Identity:</strong> Verify your phone via OTP and authenticate you on every login.</li>
+      <li><strong>Community Features:</strong> Display your profile, flat details, and community notices.</li>
+      <li><strong>Payments:</strong> Process and record maintenance fee transactions via Razorpay.</li>
+      <li><strong>Push Notifications:</strong> Send you community notices, payment confirmations, and SOS status updates via Firebase Cloud Messaging.</li>
+      <li><strong>SOS Emergency Response:</strong> Relay your alert (and optional location) to your society's admin and security team in real time.</li>
+      <li><strong>Service Directory:</strong> Connect you with service providers registered in your community.</li>
+      <li><strong>App Improvement:</strong> Aggregate, anonymised usage patterns to improve performance and fix issues.</li>
+    </ul>
+    <p>We do not use your data for advertising, cross-app tracking, or to build marketing profiles.</p>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6">
+    <h2><span class="sec-num">6</span> Data Sharing &amp; Third Parties</h2>
+    <p>We do not sell your personal data. We share data only as described below:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Party</th><th>What is shared</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Your Society Admin &amp; Security Team</strong></td>
+          <td>Name, flat number, SOS alert (including location if provided)</td>
+          <td>Core service — they manage your community and respond to emergencies</td>
+        </tr>
+        <tr>
+          <td><strong>Firebase (Google)</strong></td>
+          <td>FCM device token</td>
+          <td>Delivering push notifications; governed by <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><strong>Razorpay</strong></td>
+          <td>Payment amount, order ID</td>
+          <td>Processing maintenance payments; governed by <a href="https://razorpay.com/privacy/" target="_blank" rel="noopener">Razorpay's Privacy Policy</a>. We never share card or bank details with Razorpay — those are handled entirely within Razorpay's own PCI-DSS certified environment.</td>
+        </tr>
+        <tr>
+          <td><strong>Cloud Hosting Provider</strong></td>
+          <td>All app data (encrypted in transit)</td>
+          <td>Server infrastructure to run the platform</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>We may disclose data if required by law, a court order, or to prevent immediate harm to any person.</p>
+  </section>
+
+  <!-- 7 -->
+  <section id="s7">
+    <h2><span class="sec-num">7</span> Data Safety Summary (Google Play)</h2>
+    <p>
+      This section answers the exact questions Google Play's Data Safety form asks, so you know
+      exactly what we declared.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Play Store Question</th><th>Our Answer</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Does the app collect or share user data?</td>
+          <td><span class="tag tag-yes">Yes</span></td>
+        </tr>
+        <tr>
+          <td>Is all data transfer encrypted?</td>
+          <td><span class="tag tag-yes">Yes — HTTPS/TLS for all API calls</span></td>
+        </tr>
+        <tr>
+          <td>Can users request data deletion?</td>
+          <td><span class="tag tag-yes">Yes — via in-app "Delete Account" or email request</span></td>
+        </tr>
+        <tr>
+          <td><strong>Personal info</strong> — Name</td>
+          <td><span class="tag tag-yes">Collected</span> · Required · App functionality</td>
+        </tr>
+        <tr>
+          <td><strong>Personal info</strong> — Phone number</td>
+          <td><span class="tag tag-yes">Collected</span> · Required · Account management</td>
+        </tr>
+        <tr>
+          <td><strong>Personal info</strong> — Email address</td>
+          <td><span class="tag tag-no">Not collected</span></td>
+        </tr>
+        <tr>
+          <td><strong>Location</strong> — Precise location</td>
+          <td><span class="tag tag-opt">Collected (Optional)</span> · Only when SOS button pressed · App functionality · Not shared with third parties</td>
+        </tr>
+        <tr>
+          <td><strong>Location</strong> — Approximate location</td>
+          <td><span class="tag tag-opt">Collected (Optional)</span> · Same as above</td>
+        </tr>
+        <tr>
+          <td>Location collected in the background?</td>
+          <td><span class="tag tag-no">No — foreground only, one-time on SOS trigger</span></td>
+        </tr>
+        <tr>
+          <td><strong>Financial info</strong> — Purchase history / transactions</td>
+          <td><span class="tag tag-yes">Collected</span> · Required · App functionality (payment records)</td>
+        </tr>
+        <tr>
+          <td><strong>Device or other IDs</strong> — Device / advertising ID</td>
+          <td><span class="tag tag-yes">Collected</span> · FCM token only · App functionality (push notifications) · Not used for advertising</td>
+        </tr>
+        <tr>
+          <td><strong>Contacts, SMS, Camera, Microphone, Photos</strong></td>
+          <td><span class="tag tag-no">Not collected</span></td>
+        </tr>
+        <tr>
+          <td><strong>Browsing history, search history, web activity</strong></td>
+          <td><span class="tag tag-no">Not collected</span></td>
+        </tr>
+        <tr>
+          <td><strong>Health &amp; fitness, biometrics</strong></td>
+          <td><span class="tag tag-no">Not collected</span></td>
+        </tr>
+        <tr>
+          <td>Data shared with third parties?</td>
+          <td>
+            <span class="tag tag-third">Firebase</span> — FCM token for push notifications<br>
+            <span class="tag tag-third">Razorpay</span> — payment amount &amp; order ID<br>
+            Location data is <strong>not</strong> shared with any third party.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 8 -->
+  <section id="s8">
+    <h2><span class="sec-num">8</span> Data Security &amp; Storage</h2>
+    <ul>
+      <li>All communication between the app and our servers is encrypted using HTTPS/TLS.</li>
+      <li>Authentication tokens are stored in the device's encrypted secure storage (not shared preferences).</li>
+      <li>Our servers are access-controlled; only authorised personnel can access production data.</li>
+      <li>Payment processing is handled entirely by Razorpay's PCI-DSS compliant infrastructure — we never see or store your card or bank details.</li>
+    </ul>
+  </section>
+
+  <!-- 9 -->
+  <section id="s9">
+    <h2><span class="sec-num">9</span> Data Retention &amp; Account Deletion</h2>
+    <p>
+      We keep your data for as long as your account exists or as needed to provide the service.
+    </p>
+    <h3>How to delete your account</h3>
+    <p>
+      You can delete your account and all associated data directly from the app:
+    </p>
+    <ol>
+      <li>Open the app → go to <strong>Profile</strong>.</li>
+      <li>Tap <strong>Delete Account</strong> at the bottom.</li>
+      <li>Confirm deletion.</li>
+    </ol>
+    <p>
+      Alternatively, email us at <a href="mailto:developerbymistake@gmail.com">developerbymistake@gmail.com</a>
+      with the subject <em>"Account Deletion Request"</em> and your registered phone number.
+      We will process your request within <strong>30 days</strong>.
+    </p>
+    <div class="info-box">
+      After deletion: your profile, flat details, SOS history (including stored location), and payment records are permanently removed from our servers. Payment transaction records required for accounting compliance may be retained in anonymised form for a legally required period.
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section id="s10">
+    <h2><span class="sec-num">10</span> Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+      <li><strong>Correction</strong> — request correction of inaccurate information.</li>
+      <li><strong>Deletion</strong> — request deletion of your account and all personal data (see Section 9).</li>
+      <li><strong>Withdrawal of consent</strong> — you may revoke location permission at any time in your device settings; the SOS feature will still work without it.</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:developerbymistake@gmail.com">developerbymistake@gmail.com</a>.</p>
+  </section>
+
+  <!-- 11 -->
+  <section id="s11">
+    <h2><span class="sec-num">11</span> Children's Privacy</h2>
+    <p>
+      SocietyHub is not directed at children under the age of 13. We do not knowingly collect
+      personal information from children. If you believe a child under 13 has provided us with
+      personal data, please contact us and we will delete it promptly.
+    </p>
+  </section>
+
+  <!-- 12 -->
+  <section id="s12">
+    <h2><span class="sec-num">12</span> Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will update the
+      "Last updated" date at the top of this page. For significant changes, we will notify
+      you through a push notification or an in-app message. Continued use of the app after
+      any changes constitutes your acceptance of the updated policy.
+    </p>
+  </section>
+
+  <!-- 13 -->
+  <section id="s13">
+    <h2><span class="sec-num">13</span> Contact Us</h2>
+    <p>
+      If you have any questions, concerns, or requests about this Privacy Policy or your
+      personal data, please contact us:
+    </p>
+    <p>
+      <strong>Email:</strong> <a href="mailto:developerbymistake@gmail.com">developerbymistake@gmail.com</a><br>
+      <strong>App:</strong> SocietyHub (Resident App)
+    </p>
+    <p>We aim to respond to all privacy-related inquiries within 5 business days.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 SocietyHub. All rights reserved.</p>
+  <p style="margin-top:6px">
+    <a href="mailto:developerbymistake@gmail.com">Contact Us</a>
+  </p>
+</footer>
+
+</body>
+</html>
